@@ -1,0 +1,30 @@
+{
+  "name": "num-parser",
+  "version": "1.0.0",
+  "description": "Parse numbers in ExpressJS requests.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/passabilities/num-parser.git"
+  },
+  "keywords": [
+    "expressjs",
+    "number",
+    "parser",
+    "middleware",
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Noah Passalacqua",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/passabilities/num-parser/issues"
+  },
+  "homepage": "https://github.com/passabilities/num-parser#readme",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
