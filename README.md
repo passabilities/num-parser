@@ -1,8 +1,6 @@
-# num-parser
+# num-parser [![npm](https://img.shields.io/npm/v/num-parser.svg)](https://www.npmjs.com/package/num-parser)
 
 Parse numbers in ExpressJS requests.
-
-[![npm](https://img.shields.io/npm/v/num-parser.svg)](https://www.npmjs.com/package/num-parser)
 
 ## Installation
 

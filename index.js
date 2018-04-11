@@ -8,13 +8,18 @@ module.exports = (req, res, next) => {
 }
 
 function parseNums(obj) {
-  if(obj instanceof Array) {
+  if (obj instanceof Array) {
     return _.map(obj, parseNums)
-  } else if(obj instanceof Object) {
+  } else if (obj instanceof Object) {
     return _.mapValues(obj, parseNums)
   } else {
-    if(typeof obj === 'string' && !isNaN(obj)) {
-      return parseFloat(obj)
+    if (typeof obj === 'string'){
+      const isHex = /^0x/.test(obj)
+      if (isHex) {
+        return obj
+      } else if (!isNaN(obj)) {
+        return parseFloat(obj)
+      }
     } else {
       return obj
     }
