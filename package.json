@@ -1,6 +1,6 @@
 {
   "name": "num-parser",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Parse numbers in ExpressJS requests.",
   "main": "index.js",
   "scripts": {
