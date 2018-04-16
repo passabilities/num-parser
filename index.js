@@ -14,11 +14,11 @@ function parseNums(obj) {
     return _.mapValues(obj, parseNums)
   } else {
     if (typeof obj === 'string'){
-      const isHex = /^0x/.test(obj)
-      if (isHex) {
-        return obj
-      } else if (!isNaN(obj)) {
+      const onlyNumbers = /^[0-9]*$/.test(obj)
+      if (onlyNumbers) {
         return parseFloat(obj)
+      } else {
+        return obj
       }
     } else {
       return obj
